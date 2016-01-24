@@ -18,7 +18,7 @@ t3<-within(t3,date_time<- paste(as.Date(t3$Date,format = "%d/%m/%Y"),t3$Time))
 t3$date_time<- strptime(t3$date_time, format = "%Y-%m-%d %H:%M:%S")
 
 ##### 4 by 4
-par(mfrow=c(1,4))
+par(mfrow=c(2,2))
 
 ###First plot
 

@@ -21,7 +21,7 @@ plot(t3$date_time,t3$Sub_metering_1,type="l",ylab = "Sub_metering_1",xlab = "")
 points(t3$date_time,t3$Sub_metering_2,type="l",ylab = "Sub_metering_2",xlab = "",col=2)
 points(t3$date_time,t3$Sub_metering_3,type="l",ylab = "Sub_metering_3",xlab = "",col=4)
 legend(x=40,y=30,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c(1,2,4))
-library(datasets)
+
 ######## png file printing
 
 dev.copy(png,file="plot3.png",height= 480, width=480)

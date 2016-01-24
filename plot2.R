@@ -10,7 +10,7 @@ t3<- filter(t2,strptime(t2$Date,format = "%d/%m/%Y") %in% c('2007-02-01','2007-0
 
 
 ###### create date time column in t3
-t3<- within(t3,date_time<- paste(as.Date(t3$Date,format = "%d/%m/%Y"),t3$Time))
+t3<-within(t3,date_time<- paste(as.Date(t3$Date,format = "%d/%m/%Y"),t3$Time))
 
 ### converting date_time from char to POXIT and POXICT format
 t3$date_time<- strptime(t3$date_time, format = "%Y-%m-%d %H:%M:%S")
